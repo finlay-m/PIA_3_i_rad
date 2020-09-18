@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     // simple Boolean variable enough for 2 players
     var playerOneTurn = true
     var winnerColor : UIColor?
+    @IBOutlet weak var playerTurnLabel: UILabel!
+    
 
     @IBOutlet weak var Tile1: UIButton!
     @IBOutlet weak var Tile2: UIButton!
@@ -28,16 +30,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        Tile1.backgroundColor = UIColor.blue
-        Tile2.backgroundColor = UIColor.blue
-        Tile3.backgroundColor = UIColor.blue
-        Tile4.backgroundColor = UIColor.blue
-        Tile5.backgroundColor = UIColor.blue
-        Tile6.backgroundColor = UIColor.blue
-        Tile7.backgroundColor = UIColor.blue
-        Tile8.backgroundColor = UIColor.blue
-        Tile9.backgroundColor = UIColor.blue
+         
+        resetGame()
         
     }
     
@@ -52,15 +46,16 @@ class ViewController: UIViewController {
         
         if(playerOneTurn)
         {
-            // sender in this case means the button that has been pressed
             sender.backgroundColor = UIColor.red
             // toggle players
             playerOneTurn = false
+            playerTurnLabel.text = "PLAYER 2"
         }
         else
         {
             sender.backgroundColor = UIColor.green
             playerOneTurn = true
+            playerTurnLabel.text = "PLAYER 1"
         }
         
         checkWon()
@@ -84,11 +79,13 @@ class ViewController: UIViewController {
         if(winnerColor == UIColor.red)
         {
             print("Player 1 wins!")
+            resetGame()
         }
         
         if(winnerColor == UIColor.green)
         {
             print("Player 2 wins!")
+            resetGame()
         }
     }
     
@@ -99,6 +96,22 @@ class ViewController: UIViewController {
         {
             winnerColor = t1.backgroundColor!
         }
+    }
+    
+    // all tiles to blue, resets winnerColor
+    func resetGame()
+    {
+        Tile1.backgroundColor = UIColor.blue
+        Tile2.backgroundColor = UIColor.blue
+        Tile3.backgroundColor = UIColor.blue
+        Tile4.backgroundColor = UIColor.blue
+        Tile5.backgroundColor = UIColor.blue
+        Tile6.backgroundColor = UIColor.blue
+        Tile7.backgroundColor = UIColor.blue
+        Tile8.backgroundColor = UIColor.blue
+        Tile9.backgroundColor = UIColor.blue
+        
+        winnerColor = nil
     }
 
 }

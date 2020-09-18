@@ -17,9 +17,20 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGt-UC-oKj" userLabel="TopView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAYER 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNu-Cc-hWg">
+                                        <rect key="frame" x="0.0" y="94" width="414" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="FNu-Cc-hWg" secondAttribute="bottom" constant="5" id="CpA-1Q-k56"/>
+                                    <constraint firstItem="FNu-Cc-hWg" firstAttribute="leading" secondItem="AGt-UC-oKj" secondAttribute="leading" id="EF6-xd-Hih"/>
                                     <constraint firstAttribute="height" constant="120" id="PIS-9C-aXN"/>
+                                    <constraint firstAttribute="trailing" secondItem="FNu-Cc-hWg" secondAttribute="trailing" id="mRs-nF-L0r"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xok-6m-m9q">
@@ -185,6 +196,7 @@
                         <outlet property="Tile7" destination="G1R-PS-Dst" id="8AM-4w-Dz0"/>
                         <outlet property="Tile8" destination="soZ-mw-glG" id="OxS-Rl-Qjb"/>
                         <outlet property="Tile9" destination="InG-Xh-Txl" id="88y-6h-jaI"/>
+                        <outlet property="playerTurnLabel" destination="FNu-Cc-hWg" id="yds-Wy-NfF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
