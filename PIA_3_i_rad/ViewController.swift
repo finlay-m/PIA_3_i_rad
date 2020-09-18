@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     // simple Boolean variable enough for 2 players
     var playerOneTurn = true
+    var winnerColor : UIColor?
 
     @IBOutlet weak var Tile1: UIButton!
     @IBOutlet weak var Tile2: UIButton!
@@ -27,12 +28,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        Tile1.backgroundColor = UIColor.blue
+        Tile2.backgroundColor = UIColor.blue
+        Tile3.backgroundColor = UIColor.blue
+        Tile4.backgroundColor = UIColor.blue
+        Tile5.backgroundColor = UIColor.blue
+        Tile6.backgroundColor = UIColor.blue
+        Tile7.backgroundColor = UIColor.blue
+        Tile8.backgroundColor = UIColor.blue
+        Tile9.backgroundColor = UIColor.blue
+        
     }
     
     
     @IBAction func clickTile(_ sender: UIButton) {
         
-        if(sender.backgroundColor == UIColor.red || sender.backgroundColor == UIColor.green)
+        if(sender.backgroundColor != UIColor.blue)
         {
             // this will end clickTile function without changing color or turn
             return
@@ -58,18 +70,16 @@ class ViewController: UIViewController {
     // check win conditions
     func checkWon()
     {
-        var winnerColor : UIColor?
+        checkForThree(t1: Tile1, t2: Tile2, t3: Tile3)
+        checkForThree(t1: Tile4, t2: Tile5, t3: Tile6)
+        checkForThree(t1: Tile7, t2: Tile8, t3: Tile9)
         
-        // ! problem ! if the 2nd row is all background color, then it negates the row 1 win
-        if(Tile1.backgroundColor == Tile2.backgroundColor && Tile1.backgroundColor == Tile3.backgroundColor)
-        {
-            winnerColor = Tile1.backgroundColor
-        }
-        if(Tile4.backgroundColor == Tile5.backgroundColor && Tile4.backgroundColor == Tile6.backgroundColor)
-        {
-            winnerColor = Tile4.backgroundColor
-        }
+        checkForThree(t1: Tile1, t2: Tile4, t3: Tile7)
+        checkForThree(t1: Tile2, t2: Tile5, t3: Tile8)
+        checkForThree(t1: Tile3, t2: Tile6, t3: Tile9)
         
+        checkForThree(t1: Tile1, t2: Tile5, t3: Tile9)
+        checkForThree(t1: Tile7, t2: Tile5, t3: Tile3)
         
         if(winnerColor == UIColor.red)
         {
@@ -80,8 +90,15 @@ class ViewController: UIViewController {
         {
             print("Player 2 wins!")
         }
-        
+    }
+    
+    // these t1 parameters are whatever tiles are sent, so t1 is not necessarily Tile1
+    func checkForThree(t1 : UIButton, t2 : UIButton, t3 : UIButton)
+    {
+        if(t1.backgroundColor == t2.backgroundColor && t1.backgroundColor == t3.backgroundColor && t1.backgroundColor != UIColor.blue)
+        {
+            winnerColor = t1.backgroundColor!
+        }
     }
 
 }
-
