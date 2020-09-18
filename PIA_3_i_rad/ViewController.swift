@@ -6,6 +6,13 @@
 //  Copyright © 2020 Finlay MacGregor. All rights reserved.
 //
 
+
+// For practice setting contraints and connecting to code
+// ways to improve this:
+// better pratice would be to create the buttons in code
+// add winning screen dialog or list winner
+// add way to reset after tie
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -13,9 +20,10 @@ class ViewController: UIViewController {
     // simple Boolean variable enough for 2 players
     var playerOneTurn = true
     var winnerColor : UIColor?
-    @IBOutlet weak var playerTurnLabel: UILabel!
     
+    @IBOutlet weak var playerTurnLabel: UILabel!
 
+    // creating this many GUI buttons and connecting them to code is bad practice!
     @IBOutlet weak var Tile1: UIButton!
     @IBOutlet weak var Tile2: UIButton!
     @IBOutlet weak var Tile3: UIButton!
@@ -44,6 +52,7 @@ class ViewController: UIViewController {
             return
         }
         
+        // changes the color of empty tiles
         if(playerOneTurn)
         {
             sender.backgroundColor = UIColor.red
