@@ -31,7 +31,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="lbQ-Xq-9Ab" secondAttribute="height" multiplier="1:1" id="gpK-A8-6St"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="clickTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UHd-Uw-2Jh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72F-wY-2Uq">
                                         <rect key="frame" x="138" y="0.0" width="138" height="138"/>
@@ -39,7 +41,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="72F-wY-2Uq" secondAttribute="height" multiplier="1:1" id="e34-LG-R9C"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="clickTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bch-oU-AdT"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6F-O8-a0E">
                                         <rect key="frame" x="276" y="0.0" width="138" height="138"/>
@@ -47,7 +51,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="u6F-O8-a0E" secondAttribute="height" multiplier="1:1" id="Ki8-vb-3KS"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="clickTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ceZ-ku-1OO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drc-se-oKS">
                                         <rect key="frame" x="0.0" y="138" width="138" height="138"/>
@@ -55,7 +61,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Drc-se-oKS" secondAttribute="height" multiplier="1:1" id="3fV-7v-zWj"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="clickTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7t1-TM-BZq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52k-xL-Lpf">
                                         <rect key="frame" x="138" y="138" width="138" height="138"/>
@@ -63,7 +71,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="52k-xL-Lpf" secondAttribute="height" multiplier="1:1" id="eGQ-IA-35a"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="clickTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Gp-Wa-w2y"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb7-cw-uEh">
                                         <rect key="frame" x="276" y="138" width="138" height="138"/>
@@ -71,7 +81,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="eb7-cw-uEh" secondAttribute="height" multiplier="1:1" id="UXN-wY-cee"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="clickTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YxW-J6-9bs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1R-PS-Dst">
                                         <rect key="frame" x="0.0" y="276" width="138" height="138"/>
@@ -79,7 +91,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="G1R-PS-Dst" secondAttribute="height" multiplier="1:1" id="btg-RW-GbV"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="clickTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sfj-Oa-6GC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soZ-mw-glG">
                                         <rect key="frame" x="138" y="276" width="138" height="138"/>
@@ -87,7 +101,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="soZ-mw-glG" secondAttribute="height" multiplier="1:1" id="pvZ-Qa-FTW"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="clickTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JDr-ou-dx2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InG-Xh-Txl">
                                         <rect key="frame" x="276" y="276" width="138" height="138"/>
@@ -95,7 +111,9 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="InG-Xh-Txl" secondAttribute="height" multiplier="1:1" id="92f-Oq-xTx"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="clickTile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sRO-XM-4fe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -157,6 +175,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="Tile1" destination="lbQ-Xq-9Ab" id="iJo-Vu-hDX"/>
+                        <outlet property="Tile2" destination="72F-wY-2Uq" id="60F-cK-IRv"/>
+                        <outlet property="Tile3" destination="u6F-O8-a0E" id="AP3-vI-016"/>
+                        <outlet property="Tile4" destination="Drc-se-oKS" id="JTZ-fm-9tW"/>
+                        <outlet property="Tile5" destination="52k-xL-Lpf" id="ScR-he-a82"/>
+                        <outlet property="Tile6" destination="eb7-cw-uEh" id="8fj-qJ-mzX"/>
+                        <outlet property="Tile7" destination="G1R-PS-Dst" id="8AM-4w-Dz0"/>
+                        <outlet property="Tile8" destination="soZ-mw-glG" id="OxS-Rl-Qjb"/>
+                        <outlet property="Tile9" destination="InG-Xh-Txl" id="88y-6h-jaI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
